@@ -74,7 +74,7 @@ export function Presentation() {
   useEffect(() => {
     const handleMessage = (event: MessageEvent) => {
       const allowedOrigins = [
-        "https://competition-metrics-fortinet-mar202.vercel.app/",
+        "https://competition-metrics-fortinet-apr202.vercel.app/",
         "https://lwstaging.webflow.io",
         "https://www.leadwalnut.com",
       ];
