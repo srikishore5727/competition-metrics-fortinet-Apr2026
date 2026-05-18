@@ -131,6 +131,17 @@ export function Presentation() {
       {/* Slide Container */}
       <div className="min-h-screen w-full flex items-center justify-center p-2 sm:p-4 md:p-6 lg:p-8">
         <div className="relative w-full h-full min-h-[600px] bg-white rounded-lg sm:rounded-xl shadow-xl overflow-auto flex items-center justify-center">
+          {/* Logos pinned to top corners on every slide */}
+          <img
+            src="https://competition-metrics-fortinet-mar202.vercel.app/assets/a333b5825a4a62c2c92f9a565cc6c2e7687f36c8-6c-oC4xD.png"
+            alt="LeadWalnut"
+            className={`absolute top-5 left-6 h-10 w-auto object-contain z-20 pointer-events-none ${currentSlide !== 0 ? "hidden" : ""}`}
+          />
+          <img
+            src="https://competition-metrics-fortinet-mar202.vercel.app/assets/291fe7dc7e80adc4e8b6918682e87e66ec6d5520-CcZAdtFt.png"
+            alt="Fortinet"
+            className={`absolute top-5 right-6 h-8 w-auto object-contain z-20 pointer-events-none ${currentSlide !== 0 ? "hidden" : ""}`}
+          />
           {slides[currentSlide]}
         </div>
       </div>
